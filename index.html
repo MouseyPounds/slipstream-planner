@@ -1,1 +1,79 @@
-<HTML><HEAD><TITLE>Slipstream Character Planner</TITLE></HEAD><BODY><P>Someday there might be stuff here.</P></BODY></HTML>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slipstream Character Planner</title>
+
+<meta charset="UTF-8" />
+<meta property="og:title" content="Slipstream Character Planner" />
+<meta property="og:description" content="An app to help plan out skill point spending for Slipstream: Rogue Space." />
+<meta property="og:image" content="https://mouseypounds.github.io/slipstream-planner/images/embed.png" />
+<meta property="twitter:image" content="https://mouseypounds.github.io/slipstream-planner/images/embed.png" />
+<meta name="theme-color" content="#ffe0b0">
+<meta name="author" content="MouseyPounds" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" type="text/css" href="./slipstream-planner.css" />
+<link rel="icon" type="image/png" href="./images/favicon_p.png" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="./jquery-3.2.1.min.js"><\/script>')</script>
+<script src="./slipstream-planner.js?v=0.0.1"></script>
+
+</head>
+<body>
+<div class="spaaaaace">
+<div class="stars stars-5"></div>
+<div class="stars stars-4"></div>
+<div class="stars stars-3"></div>
+<div class="stars stars-2"></div>
+<div class="stars stars-1"></div>
+</div>
+
+<div id="header" class="panel">
+<img src="images/Logo_Standard.png" alt="Slipstream: Rogue Space">
+<h1>Character Planner</h1>
+</div>
+<div id="planner-div" class="panel">
+<noscript><span class="error">Javascript appears to be unsupported by or disabled in your browser. The Slipstream Character Planner will not work without it.</span></noscript>
+<table><tbody id="body-meta">
+<tr><td id="char-cell" colspan="3"><img id="crew-icon" src="images/Avatar_Cat.png" alt="Cat">
+<td id="summary-cell" colspan="5">
+Build name: <input type="text" id="name" maxlength="25"><br/>
+Crewmate: <select id="crew-select"></select><br/>
+Level: <span id="level">1</span><br/>
+To share this build, copy the URL below<br/>
+<textarea id="build" rows="3" cols="40"></textarea>
+</tr></tbody>
+<tbody id="body-stats"><tr><th>Stat<th>Base<th>Current<th colspan="5">Points Spent</tr>
+</tbody>
+<tbody id="body-last"><tr><td colspan="3"><td colspan="5"><span id="Total-pts">0</span> / 29<br/>
+<button type="button" class="clear" id="All-clr">Clear All Points</button>
+</tbody>
+</table>
+</div>
+
+<div id="changelog" class="panel">
+<h2 id="sec_about">About</h2>
+<p>This app provides a simple way to plan out what skill points to spend when levelling a Slipstream character. Select your class using the menu and distribute points with the buttons. You can optionally name your character build and create a link to share that build with ohers.</p>
+<p>The app is written in Javascript and uses <a href="https://jquery.com/">jQuery</a>; it is hosted on GitHub Pages at <a href="https://mouseypounds.github.io/slipstream-planner/">https://mouseypounds.github.io/slipstream-planner/</a> and the source code repository is <a href="https://github.com/MouseyPounds/slipstream-planner">https://github.com/MouseyPounds/slipstream-planner</a>. 
+Please report any bugs, suggestions, or other feedback to <span class="code">@mouseypounds</span> on Discord.</p>
+<h2 id="sec_changelog">Changelog</h2>
+<ul>
+<li>26 Apr  2024 - v0.0.1 - Initial Release</li>
+</ul>
+</div>
+
+<div id="footer" class="panel">
+Other Slipstream resources: <a href="https://playslipstream.com/">Website</a> || 
+<a href="https://store.steampowered.com/app/2765860/Slipstream_Rogue_Space/">Steam Page</a> ||
+<a href="https://apps.apple.com/us/app/slipstream-rogue-space/id6443820061">App Store (iOS)</a> ||
+<a href="https://play.google.com/store/apps/details?id=net.subpixel.Slipstream">Google Play (Android)</a> ||
+<a href="https://playslipstream.fandom.com/">Wiki</a> || 
+<a href="https://discord.gg/RvyEh9SWw9">Discord</a>
+<br />
+Slipstream: Rogue Space is developed by <a href="https://www.subpixel.net/">Subpixel Studios</a>.
+<br />
+Some images are from game resources and their copyright is held by Subpixel Studios.
+</div>
+</body>
+</html>

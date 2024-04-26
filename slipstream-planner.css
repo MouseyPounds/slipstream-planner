@@ -1,0 +1,24 @@
+@keyframes wheeee{to{transform:translate(-512px)}}
+html{font-size:16px;font-family:Helvetica,Arial,sans-serif;line-height:1.8em}
+body{background:#1C1E4B;color:#ddd;image-rendering:crisp-edges;image-rendering:pixelated}
+.spaaaaace{position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;overflow:hidden}
+/* Removed star animation for performance reasons. To reenable, add the following to the .stars{} definition:
+animation-name:wheeee;animation-timing-function:linear;animation-iteration-count:infinite
+*/
+.stars{background-color:transparent;background-size:512px;position:absolute;width:200%;width:calc(100vw + 512px);height:100%}
+.stars-1{background-image:url(./images/space-256-layer1.png);animation-duration:30s;z-index:-10}
+.stars-2{background-image:url(./images/space-256-layer2.png);animation-duration:35s;z-index:-20}
+.stars-3{background-image:url(./images/space-256-layer3.png);animation-duration:50s;z-index:-30}
+.stars-4{background-image:url(./images/space-256-layer4.png);animation-duration:55s;z-index:-40}
+.stars-5{background-image:url(./images/space-256-layer5.png);animation-duration:70s;z-index:-50}
+a,a:visited,a:active{color:#00ceff;text-decoration:none;transition:color .1s linear}
+a:hover{color:#c6c;text-decoration:none}
+table{margin:0 auto;border-collapse: collapse;}
+#header,#footer,#planner-div{text-align:center}
+.panel{padding: 8px 5% 8px 12px}
+#summary-cell{text-align:left}
+td.num,#summary-cell{padding: 0 1em}
+#body-stats tr{border-bottom: 1px solid #ddd}
+#crew-icon{border: 2px solid #ddd}
+button{background-color:#a6e;color:#ddd;font-weight:bold;border-radius:6px;}
+button:disabled,button[disabled]{background-color:#435;color:#666;border:2px outset #444}
