@@ -90,7 +90,7 @@ window.onload = function () {
 	
 	// Add handlers to input fields.
 	$("button").click(function () { button_handler(this); });
-	$("select").click(function () { select_handler(this); });
+	$("select").change(function () { select_handler(this); });
 	$("#name").change(function () { name_handler(this); });
 	
 	function select_handler(e) {
