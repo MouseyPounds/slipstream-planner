@@ -50,6 +50,7 @@ window.onload = function () {
 	// Process URL parameters
 	if ($.QueryString.hasOwnProperty("c") && animal.hasOwnProperty($.QueryString["c"])) {
 		selected_crew = $.QueryString["c"];
+		$("#crew-select").val(selected_crew);
 	}
 	if ($.QueryString.hasOwnProperty("n")) {
 		$("#name").val($.QueryString["n"]);
@@ -57,7 +58,6 @@ window.onload = function () {
 	if ($.QueryString.hasOwnProperty("p")) {
 		var pts = $.QueryString["p"].split(',');
 		var i = 0;
-console.log(pts);
 		for (const [key, value] of Object.entries(stat)) {
 			if (pts.length <= i) {
 				break;
@@ -68,7 +68,7 @@ console.log(pts);
 
 	// Initial input setup
 	for (const key of Object.keys(animal)) {
-		var extra = (key == selected_crew) ? selected_crew : '';
+		var extra = (key == selected_crew) ? "selected" : '';
 		$("#crew-select").append('<option value="' + key + '"' + extra + '>' + key + '</option>');
 	}
 	for (const [key, value] of Object.entries(stat)) {
