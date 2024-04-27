@@ -39,9 +39,9 @@ window.onload = function () {
 		"Bear": { "Health": 75, "Combat": 40, "Speed": 22 },
 		"Cat": { "Gunnery": 20 },
 		"Croc": { "Health": 45, "Shields": 45, "Combat": 25, "Speed": 40 }, 
-		"Hamster": { "Health": 40, "Shields": 40, "Repair": 15, "Speed": 52 },
-		"Octo": { "Repair": 30 },
-		"Turtle": { "Shields": 80, "Defense": 22, "Repair": 13, "Speed": 21 },
+		"Hamster": { "Health": 40, "Shields": 40, "Repairs": 15, "Speed": 52 },
+		"Octo": { "Repairs": 30 },
+		"Turtle": { "Shields": 80, "Defense": 22, "Repairs": 13, "Speed": 21 },
 	};
 	const max_crew_level = 30;
 	var selected_crew = "Cat";
