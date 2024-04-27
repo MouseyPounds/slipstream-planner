@@ -129,8 +129,9 @@ window.onload = function () {
 					stat[key].pts = Math.min(stat[key].max_pts, stat[key].pts + 1);
 					break;
 				case "max":
-					// Assuming level is up-to-date
-					var avail_pts = max_crew_level - Number($('#level').text());
+					// We assume level is up to date. Also we need to account for currently
+					// spent points in this skill so we make those available.
+					var avail_pts = stat[key].pts + max_crew_level - Number($('#level').text());
 					stat[key].pts = Math.min(avail_pts, stat[key].max_pts);
 					break;
 				default:
@@ -180,6 +181,11 @@ window.onload = function () {
 			ps += pts + ',';
 			total_pts += pts;
 			$('#Total-pts').html(total_pts);
+			if (total_pts == 0) {
+				$('#All-clr').prop("disabled", true);
+			} else {
+				$('#All-clr').prop("disabled", false);
+			}
 		}
 		point_string = ps.slice(0,-1);
 		var crew_level = total_pts + 1;

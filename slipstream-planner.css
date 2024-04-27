@@ -15,7 +15,7 @@ a,a:visited,a:active{color:#00ceff;text-decoration:none;transition:color .1s lin
 a:hover{color:#c6c;text-decoration:none}
 table{margin:0 auto;border-collapse: collapse;}
 #header,#footer,#planner-div{text-align:center}
-.panel{padding: 8px 5% 8px 12px}
+.panel{padding: 8px 12px}
 #summary-cell{text-align:left}
 td.num,#summary-cell{padding: 0 1em}
 #body-stats tr{border-bottom: 1px solid #ddd}
