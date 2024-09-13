@@ -40,6 +40,7 @@ window.onload = function () {
 		"Cat": { "Gunnery": 20 },
 		"Croc": { "Health": 45, "Shields": 45, "Combat": 25, "Speed": 40 }, 
 		"Hamster": { "Health": 40, "Shields": 40, "Repairs": 15, "Speed": 52 },
+		"Koala": { "Health": 60, "Speed": 40 },
 		"Octo": { "Repairs": 30 },
 		"Turtle": { "Shields": 80, "Defense": 22, "Repairs": 13, "Speed": 21 },
 	};
